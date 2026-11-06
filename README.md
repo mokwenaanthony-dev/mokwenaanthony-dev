@@ -1,12 +1,14 @@
 # Anthony Mokwena
 
-**Software developer · Johannesburg, South Africa**
+**Software developer · Johannesburg, South Africa**  
 Over 20 years building enterprise systems on Oracle, now building them in Python.
 
 I've spent my career as an analyst programmer on business-critical systems in retail, financial
-services, ticketing and municipal electricity metering, at companies including Pepkor, Sage, Liberty Life, Computicket and
-SAAB Grintek. My background is PL/SQL, Oracle Forms and Sage X3 ERP, so I know how real businesses
-run on their data. I'm now applying that experience to Python backend development.
+services, ticketing and municipal electricity metering, at companies including Pepkor, Sage, Liberty
+Life, Computicket and SAAB Grintek. Most recently, at Pepkor NexTech, I worked as a Senior Analyst
+Programmer on the **Merchandise Management System (MMS)**, the retail system behind buying, stock and
+pricing. My background is PL/SQL, Oracle Forms and Sage X3 ERP, so I know how real businesses run on
+their data. I'm now applying that experience to Python backend development.
 
 ## Featured project
 
@@ -18,7 +20,7 @@ CI pipeline with linting, security scanning and dependency auditing.
 
 ## Tech
 
-**Now:** Python · Django · Django REST Framework · PostgreSQL · Celery · Redis · Docker · pytest · GitHub Actions
+**Now:** Python · Django · Django REST Framework · PostgreSQL · Celery · Redis · Docker · pytest · GitHub Actions  
 **Background:** Oracle SQL & PL/SQL · Oracle Forms · Oracle DBA · Sage X3 · C# · VB.NET · COBOL · Jasper Reports · Azure
 
 ## Certifications
