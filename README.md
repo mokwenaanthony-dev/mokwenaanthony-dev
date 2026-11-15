@@ -10,28 +10,38 @@ Programmer on the **Merchandise Management System (MMS)**, the retail system beh
 pricing. My background is PL/SQL, Oracle Forms and Sage X3 ERP, so I know how real businesses run on
 their data. I'm now applying that experience to Python backend development.
 
-## Featured project
+## Featured projects
 
 ### [ERP-Intelligence](https://github.com/mokwenaanthony-dev/ERP-Intelligence)
-An ERP designed to be **connected and AI-ready**, not just transactional. The core is an SAP-style
-modular monolith in Django/DRF and PostgreSQL: a Universal Journal that every module posts to,
-immutable documents and business rules in a service layer.
+An ERP designed to be **connected and AI-ready**, not just transactional. The goal: the current *and
+future* state of the business known in real time; ML predicts, AI recommends, **people decide**
+([vision](https://github.com/mokwenaanthony-dev/ERP-Intelligence/blob/main/docs/VISION.md)).
 
-- **Built:** Financials, stock with moving-average valuation, order-to-cash, procure-to-pay with
-  three-way match, HR with South African payroll, and cost and profit centres. 344 tests, 99%
-  coverage, CI with linting, security scanning and dependency auditing, a release per wave.
-- **Next:** an analytics layer, then a **knowledge graph** as a semantic layer over the relational
-  data. It's fed by an event outbox and powers Customer 360, document flow, supply-chain risk and
-  **GraphRAG** to ground enterprise AI agents.
-- **Planned:** production planning and an MES link (Rust edge agents, MQTT, Python, on the ISA-95
-  model) to keep the shop floor in step with the books.
+- **Core:** an SAP-style modular monolith in Django/DRF and PostgreSQL: a Universal Journal that
+  every module posts to, immutable documents, business rules in a service layer, and every
+  operation idempotent.
+- **Modules:** Financials, stock with moving-average valuation, order-to-cash, procure-to-pay with
+  three-way match, HR with South African payroll, cost and profit centres, production planning and
+  orders on the ISA-95 model, CRM and SRM.
+- **Intelligence:** an analytics layer with Metabase dashboards; a **Neo4j knowledge graph** fed by a
+  transactional outbox (Customer 360, document flow, knowledge-graph retrieval, KG-RAG, for AI
+  agents); demand forecasting in a separate **FastAPI** service; **MRP**; revenue at risk per supplier.
+- **Shop floor:** a Unified Namespace (MQTT, ISA-95 topics) links the ERP to the MES below.
+- **Quality:** 870+ tests, 95% coverage, CI with linting, security scanning, dependency auditing and
+  contract tests between services; 16 architecture decision records; a release per wave.
 
-[Architecture and vision](https://github.com/mokwenaanthony-dev/ERP-Intelligence/blob/main/docs/ARCHITECTURE.md)
+[Architecture](https://github.com/mokwenaanthony-dev/ERP-Intelligence/blob/main/docs/ARCHITECTURE.md) ·
+[Decisions](https://github.com/mokwenaanthony-dev/ERP-Intelligence/tree/main/docs/decisions)
+
+### [MES-Intelligence](https://github.com/mokwenaanthony-dev/MES-Intelligence)
+The shop floor that ERP-Intelligence talks to: a Python MES with store-and-forward, and **Rust edge
+agents** (standard library only) reading a simulated PLC over Modbus TCP and publishing to MQTT.
+A cross-language end-to-end test runs in CI.
 
 ## Tech
 
-**Now:** Python · Django · Django REST Framework · PostgreSQL · Celery · Redis · Docker · pytest · GitHub Actions  
-**Exploring:** knowledge graphs (Neo4j) · GraphRAG · MQTT and ISA-95 for MES integration  
+**Now:** Python · Django · Django REST Framework · FastAPI · PostgreSQL · Neo4j · Celery · Redis · MQTT · Docker · pytest · GitHub Actions  
+**Also:** Rust (edge agents) · numpy (forecasting) · ISA-95 · Metabase  
 **Background:** Oracle SQL & PL/SQL · Oracle Forms · Oracle DBA · Sage X3 · C# · VB.NET · COBOL · Jasper Reports · Azure
 
 ## Certifications
